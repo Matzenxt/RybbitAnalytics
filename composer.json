@@ -1,0 +1,45 @@
+{
+    "name": "rybbit-analytics/rybbit-analytics",
+    "description": "rybbit-analytics/rybbit-analytics",
+    "type": "shopware-platform-plugin",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Matthias Lodner",
+            "email": "matthias@lodner.de"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "RybbitAnalytics\\RybbitAnalytics",
+        "label": {
+            "de-DE": "Rybbit Analytics",
+            "en-GB": "Rybbit Analytics"
+        },
+        "description": {
+            "de-DE": "Rybbit Analytics",
+            "en-GB": "Rybbit Analytics"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/Matzenxt/RybbitAnalytics",
+            "en-GB": "https://github.com/Matzenxt/RybbitAnalytics"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/Matzenxt/RybbitAnalytics",
+            "en-GB": "https://github.com/Matzenxt/RybbitAnalytics"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "RybbitAnalytics\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RybbitAnalytics\\Tests\\": "tests/"
+        }
+    }
+}
