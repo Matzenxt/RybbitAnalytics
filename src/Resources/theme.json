@@ -1,0 +1,9 @@
+{
+  "name": "RybbitAnalytics",
+  "author": "Matthias Lodner",
+  "views": [
+    "@Storefront",
+    "@Plugins",
+    "@RybbitAnalytics"
+  ]
+}

@@ -1,0 +1,20 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_hmr_mode %}
+    {{ parent() }}
+
+    {% set rybbitActive = config('RybbitAnalytics.config.rybbitActive') %}
+
+    {% if rybbitActive %}
+        {% set rybbitSrc = config('RybbitAnalytics.config.rybbitSrc') %}
+        {% set rybbitDataSiteId = config('RybbitAnalytics.config.rybbitDataSiteId') %}
+
+        {% if rybbitSrc is not empty and rybbitDataSiteId is not empty %}
+            <script
+                    src="{{ rybbitSrc }}"
+                    data-site-id="{{ rybbitDataSiteId }}"
+                    defer
+            ></script>
+        {% endif %}
+    {% endif %}
+{% endblock %}

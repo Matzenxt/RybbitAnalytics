@@ -6,6 +6,12 @@
     <card>
         <title>Rybbit configuration</title>
 
+        <input-field type="bool">
+            <name>rybbitActive</name>
+            <label>Active:</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
         <input-field type="text">
             <name>rybbitSrc</name>
             <label>Rybbit source url:</label>
@@ -15,7 +21,6 @@
         <input-field type="text">
             <name>rybbitDataSiteId</name>
             <label>Site ID:</label>
-            <defaultValue></defaultValue>
         </input-field>
     </card>
 
