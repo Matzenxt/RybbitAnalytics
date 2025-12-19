@@ -5,22 +5,26 @@
 
     <card>
         <title>Rybbit configuration</title>
+        <title lang="de-DE">Rybbit Konfiguration</title>
 
         <input-field type="bool">
             <name>rybbitActive</name>
-            <label>Active:</label>
             <defaultValue>false</defaultValue>
+            <label>Active</label>
+            <label lang="de-DE">Aktiv</label>
         </input-field>
 
         <input-field type="text">
             <name>rybbitSrc</name>
-            <label>Rybbit source url:</label>
             <defaultValue>https://app.rybbit.io/api/script.js</defaultValue>
+            <label>Rybbit source url:</label>
+            <label lang="de-DE">Rybbit URL:</label>
         </input-field>
 
         <input-field type="text">
             <name>rybbitDataSiteId</name>
             <label>Site ID:</label>
+            <label lang="de-DE">Seiten ID:</label>
         </input-field>
     </card>
 
