@@ -28,4 +28,28 @@
         </input-field>
     </card>
 
+    <card>
+        <title>Rybbit configuration second link</title>
+        <title lang="de-DE">Rybbit Konfiguration 2</title>
+
+        <input-field type="bool">
+            <name>rybbitActiveSecond</name>
+            <defaultValue>false</defaultValue>
+            <label>Active 2</label>
+            <label lang="de-DE">Aktiv 2</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>rybbitSrcSecond</name>
+            <defaultValue>https://app.rybbit.io/api/script.js</defaultValue>
+            <label>Rybbit source url 2:</label>
+            <label lang="de-DE">Rybbit URL 2:</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>rybbitDataSiteIdSecond</name>
+            <label>Site ID 2:</label>
+            <label lang="de-DE">Seiten ID 2:</label>
+        </input-field>
+    </card>
 </config>

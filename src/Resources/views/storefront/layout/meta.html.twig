@@ -17,4 +17,21 @@
             ></script>
         {% endif %}
     {% endif %}
+
+
+
+    {% set rybbitActiveSecond = config('RybbitAnalytics.config.rybbitActiveSecond') %}
+
+    {% if rybbitActiveSecond %}
+        {% set rybbitSrcSecond = config('RybbitAnalytics.config.rybbitSrcSecond') %}
+        {% set rybbitDataSiteIdSecond = config('RybbitAnalytics.config.rybbitDataSiteIdSecond') %}
+
+        {% if rybbitSrcSecond is not empty and rybbitDataSiteIdSecond is not empty %}
+            <script
+                    src="{{ rybbitSrcSecond }}"
+                    data-site-id="{{ rybbitDataSiteIdSecond }}"
+                    defer
+            ></script>
+        {% endif %}
+    {% endif %}
 {% endblock %}
